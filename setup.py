@@ -23,9 +23,9 @@ if USE_CYTHON:
     ext_modules = cythonize(ext_modules)
 
 setup(
-    name = 'rlscore',
+    name = 'konstan_testi',
     description = 'machine learning package',
-    url = "https://github.com/aatapa/RLScore",
+    url = "https://github.com/konstanyman/RLScore",
     version = "0.8.2alpha",
     license = "MIT",
     include_dirs = [np.get_include()],
