@@ -1,11 +1,11 @@
 LICENCE.TXT
 README.rst
 setup.py
+konstan_testi.egg-info/PKG-INFO
+konstan_testi.egg-info/SOURCES.txt
+konstan_testi.egg-info/dependency_links.txt
+konstan_testi.egg-info/top_level.txt
 rlscore/__init__.py
-rlscore.egg-info/PKG-INFO
-rlscore.egg-info/SOURCES.txt
-rlscore.egg-info/dependency_links.txt
-rlscore.egg-info/top_level.txt
 rlscore/learner/_global_rankrls.c
 rlscore/learner/_greedy_rls.c
 rlscore/learner/_interactive_rls_classifier.c
