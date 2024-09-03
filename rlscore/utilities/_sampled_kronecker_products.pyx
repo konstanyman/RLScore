@@ -85,6 +85,3 @@ def cpy_reorder(dst,src, rowcount, colcount):
             for h in range(rows):
                 for k in range(cols):
                     c_dst[i * cols + j, h * cols + k] = c_src[i * rows + h, j * cols + k]
-
-
-
