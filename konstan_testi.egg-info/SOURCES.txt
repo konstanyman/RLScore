@@ -1,4 +1,5 @@
 LICENCE.TXT
+MANIFEST.in
 README.rst
 setup.py
 konstan_testi.egg-info/PKG-INFO
@@ -20,6 +21,12 @@ rlscore/kernel/linear_kernel.py
 rlscore/kernel/polynomial_kernel.py
 rlscore/kernel/rset_kernel.py
 rlscore/learner/__init__.py
+rlscore/learner/_global_rankrls.c
+rlscore/learner/_greedy_rls.c
+rlscore/learner/_interactive_rls_classifier.c
+rlscore/learner/_rls.c
+rlscore/learner/_steepest_descent_mmc.c
+rlscore/learner/_two_step_rls.c
 rlscore/learner/cg_kron_rls.py
 rlscore/learner/cg_rankrls.py
 rlscore/learner/cg_rls.py
@@ -82,6 +89,7 @@ rlscore/test/test_measure/test_sqerror.py
 rlscore/test/test_utility/__init__.py
 rlscore/test/test_utility/test_sampled_kronecker_products.py
 rlscore/utilities/__init__.py
+rlscore/utilities/_sampled_kronecker_products.c
 rlscore/utilities/adapter.py
 rlscore/utilities/array_tools.py
 rlscore/utilities/cross_validation.py
@@ -90,3 +98,4 @@ rlscore/utilities/multiclass.py
 rlscore/utilities/pairwise_kernel_operator.py
 rlscore/utilities/reader.py
 rlscore/utilities/sampled_kronecker_products.py
+rlscore/utilities/swapped.c
