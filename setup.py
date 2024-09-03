@@ -8,8 +8,8 @@ ext = '.pyx' if USE_CYTHON else '.c'
 #sys.argv[1:] = ['build_ext', '--inplace']
 
 ext_modules = [
-    Extension("rlscore.utilities.swapped",["rlscore/utilities/swapped"+ext]),
     Extension("rlscore.learner._rls",["rlscore/learner/_rls"+ext]),
+    Extension("rlscore.utilities._swapped",["rlscore/utilities/_swapped"+ext]),
     Extension("rlscore.learner._global_rankrls",["rlscore/learner/_global_rankrls"+ext]),
     Extension("rlscore.learner._two_step_rls",["rlscore/learner/_two_step_rls"+ext]),
     Extension("rlscore.learner._steepest_descent_mmc",["rlscore/learner/_steepest_descent_mmc"+ext]),
