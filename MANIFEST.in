@@ -1,0 +1,2 @@
+include rlscore/learner/*.pyx
+include rlscore/utilities/*.pyx
