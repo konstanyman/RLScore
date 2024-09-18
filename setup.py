@@ -26,16 +26,11 @@ setup(
     name = 'konstan_testi',
     description = 'machine learning package',
     url = "https://github.com/konstanyman/RLScore",
-    version = "0.8.10",
+    version = "0.8.15",
     license = "MIT",
     include_dirs = [np.get_include()],
     ext_modules = ext_modules,
-    packages = find_packages(),
-    python_requires='>=3.5',
-    install_requires=[
-        'Cython>=0.28'
-    ],
-    zip_safe=False
+    packages = find_packages()
     )
 
 

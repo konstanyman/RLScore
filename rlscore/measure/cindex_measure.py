@@ -47,7 +47,7 @@ def cindex_singletask(Y, P):
         raise UndefinedPerformance("No pairs, all the instances have the same output")
     correct = array(correct).reshape(correct.shape[0],)
     predictions = array(predictions).reshape(predictions.shape[0],)
-    s = swapped.count_swapped(correct, predictions)
+    s = _swapped.count_swapped(correct, predictions)
     disagreement = float(s)/float(pairs)
     return 1. - disagreement
 
@@ -74,7 +74,7 @@ def cindex_singletask_SLOW(Y, P):
     return 1. - disagreement
 
 try:
-    from rlscore.utilities import swapped
+    from rlscore.utilities import _swapped
 except Exception as e:
     print(e)
     print('Warning: could not import the fast cython implementation of the concordance index measure. Using a slow python-based one instead.')

@@ -130,7 +130,7 @@ class KronSVM(PairwisePredictorInterface):
                 g = gradient(w, X1, X2, Y, rowind, colind, lamb)
                 G = LinearOperator((fdim, fdim), matvec=mv, rmatvec=mv, dtype=np.float64)
                 self.best_residual = float("inf")
-                self.w_new = qmr(G, g, tol=1e-10, maxiter=inneriter)[0]
+                self.w_new = qmr(G, g, rtol=1e-10, maxiter=inneriter)[0]
                 if np.all(w == w - self.w_new):
                     break
                 w = w - self.w_new
@@ -231,7 +231,7 @@ class KronSVM(PairwisePredictorInterface):
                 B[sv] = P[sv]-Y[sv]
                 B = B + lamb*a
                 #solve Ax = B
-                self.a_new = qmr(A, B, tol=1e-10, maxiter=inneriter)[0]
+                self.a_new = qmr(A, B, rtol=1e-10, maxiter=inneriter)[0]
                 if np.all(a == a - self.a_new):
                     break
                 a = a - self.a_new

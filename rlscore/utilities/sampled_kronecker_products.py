@@ -25,7 +25,7 @@
 
 import numpy as np
 
-from . import _sampled_kronecker_products
+from rlscore.utilities import _sampled_kronecker_products
 
 
 # u  <- R * (M x N) * C * v
