@@ -86,7 +86,7 @@ Software dependencies
 
 RLScore is written in Python and thus requires a working
 installation of Python 3.5 or newer. The package is also dependent on
-the `NumPy <http://numpy.scipy.org/>`_ package for matrix
+the `NumPy <http://numpy.org/>`_ package for matrix
 operations, and `SciPy <http://www.scipy.org/>`_ package for sparse
 matrix implementations, and a c-compiler for building Cython extensions.
 

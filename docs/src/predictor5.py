@@ -2,7 +2,7 @@ from rlscore.learner.kron_rls import KronRLS
 import davis_data
 
 def main():
-    X1_train, X2_train, Y_train, X1_test, X2_test, Y_test = davis_data.setting4_split()
+    X1_train, X2_train, Y_train, X1_test, X2_test, Y_test = davis_data.settingD_split()
     learner = KronRLS(X1 = X1_train, X2 = X2_train, Y = Y_train, regparam=2.**30)
     predictor = learner.predictor
     print(predictor.W)
@@ -15,7 +15,7 @@ def main():
     x2_ind = [0,0,0]
     P2 = predictor.predict(X1_test, X2_test, x1_ind, x2_ind)
     print("three first predictions again: " +str(P2))
-    print("Number of coefficients %d x %d" %predictor.W.shape)
+    print("Number of coefficients %d" %predictor.W.shape[0])
 
 if __name__=="__main__":
     main()

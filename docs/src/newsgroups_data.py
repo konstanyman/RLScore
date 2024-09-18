@@ -7,15 +7,21 @@ def load_newsgroups():
     T = np.loadtxt("train.data")
     #map indices from 1...n to 0...n-1
     rows = T[:,0] -1
+    rows = rows.astype(int)
     cols = T[:,1] -1
+    cols = cols.astype(int)
     vals = T[:,2]
+    vals = vals.astype(int)
     X_train = sp.coo_matrix((vals, (rows, cols)))
     X_train = X_train.tocsc()
     T = np.loadtxt("test.data")
     #map indices from 1...n to 0...n-1
     rows = T[:,0] -1
+    rows = rows.astype(int)
     cols = T[:,1] -1
+    cols = cols.astype(int)
     vals = T[:,2]
+    vals = vals.astype(int)
     X_test = sp.coo_matrix((vals, (rows, cols)))
     X_test = X_test.tocsc()
     #X_test has additional features not present in X_train

@@ -27,7 +27,7 @@ class Callback(object):
         pass
 
 def train_rls():
-    mndata = MNIST("./data")
+    mndata = MNIST("./mnist_data/")
     X_train, Y_train = mndata.load_training()
     X_test, Y_test = mndata.load_testing()
     X_train, X_test = np.array(X_train), np.array(X_test)
