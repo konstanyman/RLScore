@@ -2,3 +2,5 @@ build/
 dist/
 konstan_testi.egg-info/
 *.c
+*.out
+**/__pycache/
