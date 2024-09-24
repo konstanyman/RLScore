@@ -26,6 +26,7 @@
 from numpy import array
 import numpy as np
 from rlscore.measure.measure_utilities import UndefinedPerformance
+from rlscore.utilities import _swapped
 from rlscore.utilities import array_tools
 
 def cindex_singletask(Y, P):
